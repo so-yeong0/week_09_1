@@ -30,6 +30,18 @@
     h3{color: white; font-family: 'Pretendard-Regular'}
     p{color: white; font-family: 'Pretendard-Regular'; font-size: 1.2rem; line-height: 1.6;}
 
+    /* 나브바 */ 
+	.flex2 { display: flex; justify-content: space-between; align-items: center; height: 50px; position: relative; padding: 0 30px;}
+	.nav-left { display: flex; align-items: center; gap: 20px; }
+	.nav-center { position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 40px; }
+	.nav-right { display: flex; align-items: center; gap: 10px; }
+	.menu { display: flex; align-items: center; gap: 40px; padding: 0; margin: 0; }
+	.menu li { list-style: none; }
+	.menu li a { text-decoration: none; color: #6AFF00; padding: 8px; display: block; background: black; border-radius: 10px; }
+	.menu li a:hover { background: #181818; color: white; transition: all 0.3s; }
+	nav { position: fixed; top: 0; width: 100%; z-index: 1000; background: #181818; }
+
+    
 /* 헤더에 쓰인 relative, position 잡아놓은 것들 */
     .image-container{position: relative; width: 50%;}
     .title{position: absolute; top: 63%; left: 35%; color: #6AFF00; font-size: 4.2rem;font-family: 'Pretendard-ExtraBold'; text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);}
@@ -181,6 +193,26 @@
 
 <body>
 
+  <nav class="gray">
+  <div class="flex2">
+    <div class="nav-left">
+      <a href="https://so-yeong0.github.io/week_09_1/"><img src="h1.png" class="imgsize"></a>
+    </div>
+
+    <div class="nav-center">
+      <ul class="menu">
+        <li><a href="https://so-yeong0.github.io/week_09_2/">NO.1</a></li>
+        <li><a href="https://so-yeong0.github.io/week_09_44/">NO.2</a></li>
+        <li><a href="https://so-yeong0.github.io/week_09_3/">NO.3</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <h4>도망력 BOOSTER</h4>
+    </div>
+  </div>
+</nav>
+  
 <header class="bg-header">
   <div class="wrap image-container">
     <img src="logophone-1.png" class="imgsize floating" >
